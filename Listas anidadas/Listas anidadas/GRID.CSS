@@ -1,0 +1,72 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "NAV-1 NAV-1 NAV-1"
+      "BANNER BANNER BANNER"
+      "BANNER BANNER BANNER"
+      "AREA-1 AREA-1 SLIDE"
+      "AREA-1 AREA-1 SLIDE"
+      "FOOTER FOOTER FOOTER";
+  }
+  
+  .NAV-1 { grid-area: NAV-1; }
+  
+  .BANNER { grid-area: BANNER; }
+  
+  .AREA-1 { grid-area: AREA-1; }
+  
+  .SLIDE { grid-area: SLIDE; }
+  
+  .FOOTER { grid-area: FOOTER; }
+
+  .NAV-1 {
+    background-color: rgb(243, 14, 52);
+    height: 200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .BANNER{
+    background-color: rgb(112, 20, 241);
+    height: 400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .AREA-1{
+
+    background-color: rgb(64, 30, 30);
+    height: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+  }
+.SLIDE{
+    background-color: rgb(233, 19, 237);
+    height: auto; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.FOOTER{
+    background-color: rgb(23, 70, 39);
+    height: 200px; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+
+    color:aliceblue;
+    
+}
